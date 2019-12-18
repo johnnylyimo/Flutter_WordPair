@@ -26,12 +26,12 @@ ThemeData basicTheme() {
     );
   }
 
-  final TextTheme googleText = TextTheme(
-    body1: GoogleFonts.oxygen(
-      fontSize: 28.0,
-      fontWeight: FontWeight.bold,
-    ),
-  );
+//  final TextTheme googleText = TextTheme(
+//    body1: GoogleFonts.oxygen(
+//      fontSize: 28.0,
+//      fontWeight: FontWeight.bold,
+//    ),
+//  );
 
   final ColorScheme colorScheme = ColorScheme.light(
     primary: Color(0xff60bc9c),
