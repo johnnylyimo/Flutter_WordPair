@@ -19,7 +19,12 @@ class _HomePageState extends State<HomePage> {
               style: Theme.of(context).textTheme.title,
             ),
           ),
-          actions: <Widget>[],
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.list),
+              onPressed: () {},
+            )
+          ],
         ),
         body: MyListView());
   }
