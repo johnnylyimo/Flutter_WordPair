@@ -15,7 +15,14 @@ class _MyListViewState extends State<MyListView> {
       child: ListView.builder(
         itemBuilder: (BuildContext context, int index) {
           if (index.isOdd) return Divider();
-          return ListTile();
+          // calculate no of wordPair in the listView minus divider
+          final item = index ~/ 2;
+          if (item >= _randomWordPair.length) {
+            _randomWordPair.addAll(generateWordPairs().take(10));
+          }
+          return ListTile(
+            title: Text('hi'),
+          );
         },
       ),
     );
