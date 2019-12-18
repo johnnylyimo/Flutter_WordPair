@@ -25,6 +25,10 @@ class _MyListViewState extends State<MyListView> {
           if (item >= _randomWordPair.length) {
             _randomWordPair.addAll(generateWordPairs().take(10));
           }
+
+          // variable store already saved wordPair
+          final alreadySaved = _saveWordPairs.contains(_randomWordPair[item]);
+
           return ListTile(
             title: Text(
               _randomWordPair[item].asPascalCase,
