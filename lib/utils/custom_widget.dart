@@ -10,6 +10,8 @@ class _MyListViewState extends State<MyListView> {
   final _randomWordPair = <WordPair>[];
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      padding: EdgeInsets.all(10.0),
+    );
   }
 }
