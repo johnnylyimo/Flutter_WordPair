@@ -34,6 +34,10 @@ class _MyListViewState extends State<MyListView> {
               _randomWordPair[item].asPascalCase,
               style: Theme.of(context).textTheme.body1,
             ),
+            trailing: Icon(
+              alreadySaved ? Icons.favorite : Icons.favorite_border,
+              color: alreadySaved ? Colors.red : null,
+            ),
           );
         },
       ),
