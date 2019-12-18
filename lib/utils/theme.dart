@@ -26,8 +26,6 @@ ThemeData basicTheme() {
     );
   }
 
-
-
   final ColorScheme colorScheme = ColorScheme.light(
     primary: Color(0xff60bc9c),
   );
