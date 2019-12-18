@@ -13,30 +13,35 @@ ThemeData basicTheme() {
         color: Colors.white,
       ),
       title: base.title.copyWith(
-        fontFamily: '',
+        fontFamily: GoogleFonts.poppins().toString(),
         fontSize: 20.0,
-        fontWeight: FontWeight.bold,
+        fontWeight: FontWeight.normal,
         color: Colors.white,
       ),
 //      body1 affect all body text on scaffold automatically
       body1: base.body1.copyWith(
-        fontFamily: '',
-        color: Colors.black,
-      ),
+          fontFamily: GoogleFonts.roboto().toString(),
+          color: Colors.black,
+          fontSize: 20.0),
     );
   }
 
-  final TextTheme textTheme = TextTheme(
-    display1: GoogleFonts.raleway(
-      fontSize: 12.0,
+  final TextTheme googleText = TextTheme(
+    body1: GoogleFonts.oxygen(
+      fontSize: 28.0,
       fontWeight: FontWeight.bold,
     ),
+  );
+
+  final ColorScheme colorScheme = ColorScheme.light(
+    primary: Color(0xff60bc9c),
   );
 
   final ThemeData base = ThemeData.light();
   return base.copyWith(
     textTheme: _basicTextTheme(base.textTheme),
     primaryColor: Color(0xff60bc9c),
+    colorScheme: colorScheme,
     scaffoldBackgroundColor: Color(0xFFb7e2d3),
     accentColor: Color(0xFF44ac89),
     buttonColor: Color(0xFF44ac89),
