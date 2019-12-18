@@ -38,6 +38,15 @@ class _MyListViewState extends State<MyListView> {
               alreadySaved ? Icons.favorite : Icons.favorite_border,
               color: alreadySaved ? Colors.red : null,
             ),
+            onTap: () {
+              setState(() {
+                if (alreadySaved) {
+                  _saveWordPairs.remove(_randomWordPair[item]);
+                } else {
+                  _saveWordPairs.add(_randomWordPair[item]);
+                }
+              });
+            },
           );
         },
       ),
