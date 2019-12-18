@@ -2,7 +2,7 @@ import "package:flutter/material.dart";
 import 'package:english_words/english_words.dart';
 
 class HomePage extends StatefulWidget {
-  var wordPair = WordPair.random();
+  final wordPair = WordPair.random();
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -13,11 +13,17 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Center(
-          child: Text('WordPair Generator'),
+          child: Text(
+            'WordPair Generator',
+            style: Theme.of(context).textTheme.title,
+          ),
         ),
       ),
       body: Center(
-        child: Text(widget.wordPair.asPascalCase),
+        child: Text(
+          widget.wordPair.asPascalCase,
+          style: Theme.of(context).textTheme.body1,
+        ),
       ),
     );
   }
