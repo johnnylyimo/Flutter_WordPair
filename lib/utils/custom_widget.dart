@@ -12,6 +12,11 @@ class _MyListViewState extends State<MyListView> {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(10.0),
+      child: ListView.builder(
+        itemBuilder: (BuildContext context, int index) {
+          return ListTile();
+        },
+      ),
     );
   }
 }
