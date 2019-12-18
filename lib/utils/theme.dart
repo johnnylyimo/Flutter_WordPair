@@ -36,11 +36,11 @@ ThemeData basicTheme() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
     textTheme: _basicTextTheme(base.textTheme),
-    primaryColor: Colors.deepPurple.shade300,
-    scaffoldBackgroundColor: Colors.indigo.shade100,
-    accentColor: Colors.deepPurple.shade400,
-    buttonColor: Colors.red.shade400,
-    backgroundColor: Colors.red.shade500,
+    primaryColor: Color(0xff60bc9c),
+    scaffoldBackgroundColor: Color(0xFFb7e2d3),
+    accentColor: Color(0xFF44ac89),
+    buttonColor: Color(0xFF44ac89),
+    backgroundColor: Color(0xFFb7e2d3),
 
 //   iconTheme affect all icon automatically
     iconTheme: IconThemeData(
