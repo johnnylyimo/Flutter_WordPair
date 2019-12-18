@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 
-
 class MyListView extends StatefulWidget {
   @override
   _MyListViewState createState() => _MyListViewState();
