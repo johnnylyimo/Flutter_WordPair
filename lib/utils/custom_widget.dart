@@ -7,7 +7,7 @@ class MyListView extends StatefulWidget {
 }
 
 class _MyListViewState extends State<MyListView> {
-  final _randomWordPair = <WordPair>[];
+  final _randomWordPair = <WordPair>[]; // get WordPair in a List
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -17,11 +17,16 @@ class _MyListViewState extends State<MyListView> {
           if (index.isOdd) return Divider();
           // calculate no of wordPair in the listView minus divider
           final item = index ~/ 2;
+
+          // as we scroll down generate new 10 wordPair
           if (item >= _randomWordPair.length) {
             _randomWordPair.addAll(generateWordPairs().take(10));
           }
           return ListTile(
-            title: Text('hi'),
+            title: Text(
+              _randomWordPair[item].asPascalCase,
+              style: Theme.of(context).textTheme.body1,
+            ),
           );
         },
       ),
