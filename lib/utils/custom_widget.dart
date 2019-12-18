@@ -14,6 +14,7 @@ class _MyListViewState extends State<MyListView> {
       padding: EdgeInsets.all(10.0),
       child: ListView.builder(
         itemBuilder: (BuildContext context, int index) {
+          if (index.isOdd) return Divider();
           return ListTile();
         },
       ),
