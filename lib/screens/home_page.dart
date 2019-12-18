@@ -1,8 +1,7 @@
 import "package:flutter/material.dart";
-import 'package:english_words/english_words.dart';
+import 'package:wordpair_generator/utils/custom_widget.dart';
 
 class HomePage extends StatefulWidget {
-  final wordPair = WordPair.random();
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -19,12 +18,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
-      body: Center(
-        child: Text(
-          widget.wordPair.asPascalCase,
-          style: Theme.of(context).textTheme.body1,
-        ),
-      ),
+      body: Center(child: MyListView()),
     );
   }
 }
