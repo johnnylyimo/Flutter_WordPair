@@ -7,6 +7,7 @@ class MyListView extends StatefulWidget {
 }
 
 class _MyListViewState extends State<MyListView> {
+  final _randomWordPair = <WordPair>[];
   @override
   Widget build(BuildContext context) {
     return Container();
