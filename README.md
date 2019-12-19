@@ -1,16 +1,12 @@
-# wordpair_generator
+# A Word Pair_generator
 
-A new Flutter application.
+A Flutter simple app
+    This app shows a list of words and allow you to select or dis-select your favorite words
 
 ## Getting Started
+Get familiarize how to use ListTile widget and other widgets. So get down and check this app.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+print (" SHARING IS CARING ") ;
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+fmt.println ( " LET ME ALSO MAKE THE THE WORLD BETTER PLACE. ")
